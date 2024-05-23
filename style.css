@@ -1,0 +1,79 @@
+body{
+    border: 1px solid  rgb(177, 176, 176);
+}
+#quicklinks{
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: 1px solid rgb(177, 176, 176);
+    overflow: hidden;
+    background-color: rgb(216, 213, 213);
+}
+#quicklinks ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#quicklinks li{
+    float: left;
+    margin-right: 250px;
+}
+#quicklinks li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+#quicklinks li a:hover{
+    background-color: white;
+}
+
+.alejar{
+    margin-left: 110px;
+}
+#logo img{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 570px;
+}
+#logo{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+#informacioncontenedora{
+    background-color: black;
+}
+#informacion{
+    display: flex;
+}
+p{
+    color: white;
+    margin:0;
+}
+.img1{
+    width: 400px;
+    height: 250px;
+}
+.imagenytexto{
+    width: 500px;
+    margin-left: 115px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+h2{
+    color: white;
+    padding-left: 120px;
+}
+.seccion{
+    margin-bottom: 20px;
+}
