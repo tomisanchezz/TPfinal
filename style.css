@@ -16,7 +16,7 @@ body{
 }
 #quicklinks li{
     float: left;
-    margin-right: 250px;
+    margin-right: 244px;
 }
 #quicklinks li a{
     display: block;
@@ -68,7 +68,7 @@ p{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    
+    flex-wrap: wrap;
 }
 h2{
     color: white;
@@ -76,4 +76,8 @@ h2{
 }
 .seccion{
     margin-bottom: 20px;
+}
+.img2{
+    width: 290px;
+    height: 290px;
 }
