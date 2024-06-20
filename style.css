@@ -3,6 +3,7 @@ body{
     font-family: Arial, sans-serif;
     font-size: 13.4px;
     background-color: #f4f4f4;
+    border-radius: 10px;
 }
 #quicklinks{
     margin: 0;
@@ -51,8 +52,8 @@ h1{
 #logo{
     display: flex;
     background-color: rgb(255, 255, 255); 
+    border: 2px solid rgb(105, 105, 105);
 }
-
 #informacioncontenedora{
     background-color: black;
 }
@@ -69,6 +70,7 @@ p{
 .img1{
     width: 400px;
     height: 250px;
+    border-radius: 5px; 
 }
 .imagenytexto{
     width: 500px;
@@ -90,4 +92,11 @@ h2{
     height: 290px;
     border-radius: 5px; 
     box-shadow: 0 4px 6px rgba(255, 0, 119, 0.2);
+}
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-top: 10px;
+    text-align: right; 
 }

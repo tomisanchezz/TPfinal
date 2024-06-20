@@ -6,28 +6,36 @@
     <title>Contacto - Suplementos Deportivos</title>
     <link rel="stylesheet" href="contcto.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    h2{
+        color: black;
+    }
+    #logo{
+        border-radius: 10px;
+    }
+</style>
 <body>
 
-<header id="quicklinks">
+<div id="quicklinks">
     <nav>
         <ul>
             <li class="alejar"><a href="Inicio.html">Inicio</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="guiaSuplementacion.html">Guía Suplementación</a></li>
+            <li><a href="guiaSuplementacion.html">Consecuencia de mal uso</a></li>
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="carrito.html" id="carrito-enlace">Carrito de compras</a></li>
         </ul>
     </nav>
-</header>
+</div>
 
 <div id="logo">
     <img src="logopagina.png" alt="SuplementosDeportivos">
     <h1>Contacto</h1>
 </div>
 
-<main id="contacto-contenedor">
-    <section id="info-contacto">
+<div id="contacto-contenedor">
+    <div id="info-contacto">
         <h2>Contáctanos</h2>
         <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos a través del siguiente formulario, por correo electrónico o por teléfono.</p>
         <ul>
@@ -35,9 +43,9 @@
             <li><strong>Teléfono:</strong> +542984409447</li>
             <li><strong>Email:</strong> tomassanchez2018@gmail.com</li>
         </ul>
-    </section>
+    </div>
 
-    <section id="formulario-contacto">
+    <div id="formulario-contacto">
         <h2>Formulario de Contacto</h2>
         <form action="enviar_formulario.php" method="POST">
             <label for="nombre">Nombre:</label>
@@ -51,20 +59,16 @@
             
             <button type="submit">Enviar</button>
         </form>
-    </section>
+    </div>
 
-    <section id="redes-sociales">
+    <div id="redes-sociales">
         <h2>Síguenos en Redes Sociales</h2>
         <ul>
-            
-            <li><a href="https://pedco.uncoma.edu.ar/"><img src="ISOLOGOTIPO PEDCO Sombrero 2020 Simple.png" alt="pedco" id="img"></a>
-            
-            </li>
-            <li><a href="https://www.instagram.com/tomi.sanchezzz/"><img src="intragram.jpg" alt="ig" id="img"></a>
-            </li>
+            <li><a href="https://pedco.uncoma.edu.ar/"><img src="ISOLOGOTIPO PEDCO Sombrero 2020 Simple.png" alt="pedco" id="img"></a></li>
+            <li><a href="https://www.instagram.com/tomi.sanchezzz/"><img src="intragram.jpg" alt="ig" id="img"></a></li>
         </ul>
-    </section>
-</main>
-
+    </div>
+</div>
+<script src="carrito.js"></script>
 </body>
 </html>
