@@ -1,0 +1,66 @@
+
+#contacto-contenedor {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+#info-contacto, #formulario-contacto, #mapa-ubicacion, #redes-sociales {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 10px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+#mapa iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+#redes-sociales ul {
+    display: flex;
+    justify-content: space-around;
+}
+#redes-sociales a {
+    color: #007bff;
+    text-decoration: none;
+}
+#redes-sociales a:hover {
+    text-decoration: underline;
+}
+img{
+    width: 200px;
+    height: 120px;
+}
