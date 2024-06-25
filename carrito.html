@@ -16,21 +16,26 @@
         <li><a href="guiaSuplementacion.html">Consecuencia de mal uso</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="carrito.html" id="carrito-enlace">Carrito de compras</a></li>
+        <li><a href="acercaNosotros.html">Nosotros</a></li>
     </ul>
 </div>
 
-<div id="logo" class="logo1">
-    <img src="logopagina.png" alt="SuplementosDeportivos">
-    <h1>Carrito de Compras</h1>
+<div id="header">
+    <div id="logo">
+        <img src="logopagina.png" alt="Suplementos Deportivos">
+    </div>
+    <h1>Carrito de compras</h1>
 </div>
 
 <div id="informacioncontenedora">
-    <div id="informacion">
+    <div id="informacion" class="carrito-info">
         <h2>Carrito de Compras</h2>
         <ul id="carrito-lista"></ul>
         <p>Total: $<span id="carrito-total">0</span></p>
+    </div>
+    <div id="informacion" class="carrito-info">
         <h2>Método de Pago</h2>
-        <form>
+        <form class="formulario-pago">
             <label for="nombre" id="labell1">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
             
