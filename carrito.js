@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() { //cuando se carga la 
     var carritoEnlace = document.getElementById('carrito-enlace');
     var carritoTotalElement = document.getElementById('carrito-total');
 
-    //calcular total del precio de los productos y actualizar el texto del enlace.
+    //calcular total del precio de los productos y actualizar el texto del indice #carrito.html.
     function actualizarCarritoEnlace() {
         var total = 0;
         carrito.forEach(function(producto) {
