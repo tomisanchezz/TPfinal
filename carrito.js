@@ -1,29 +1,32 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var carrito = JSON.parse(localStorage.getItem('carrito')) || []; //si no recupera el carrito lo inica como vacio
+document.addEventListener('DOMContentLoaded', function() { //cuando se carga la pagina se ejecuta el JS, para prevenir errores al querer manipular cosas q no estan cargadas
+    var carrito = JSON.parse(localStorage.getItem('carrito')) || []; //si no recupera el carrito lo inica como vacio, al utilizar localstorage mantiene los datos incluso cuando se cierra la pagina.
     var carritoEnlace = document.getElementById('carrito-enlace');
     var carritoTotalElement = document.getElementById('carrito-total');
 
+    //calcular total del precio de los productos y actualizar el texto del enlace.
     function actualizarCarritoEnlace() {
         var total = 0;
         carrito.forEach(function(producto) {
             total += producto.precio;
         });
         if (carritoEnlace) {
-            carritoEnlace.textContent = `Carrito de compras ($${total.toFixed(2)})`;
+            carritoEnlace.textContent = `Carrito de compras ($${total.toFixed(2)})`; //formatea el total a dos decimales. template literals (permite agregar expresiones).
         }
     }
 
+
+    //actualizar la lsita del dom, calcula el total, guarda el estado del carro en localstorage y agrega el boton eliminar con su "click".
     function actualizarCarrito() {
         var carritoLista = document.getElementById('carrito-lista');
 
         if (carritoLista) {
-            carritoLista.innerHTML = '';
+            carritoLista.innerHTML = ''; //evitar duplicados
         }
 
         var total = 0;
         carrito.forEach(function(producto, index) {
             var li = document.createElement('li');
-            li.innerHTML = `${producto.nombre} - $${producto.precio} <button class="remove-from-cart" data-index="${index}">Eliminar</button>`; //creo el botton aca para que se agregue al li unicamente y sea mejor el manejo de los botones
+            li.innerHTML = `${producto.nombre} - $${producto.precio} <button class="remove-from-cart" data-index="${index}">Eliminar</button>`; //creo el botton aca para que se agregue al li unicamente y sea mejor el manejo de los botones al eliminar.
             if (carritoLista) {
                 carritoLista.appendChild(li); //se le agrega el "texto" al li
             }
